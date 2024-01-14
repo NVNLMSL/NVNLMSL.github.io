@@ -8,7 +8,7 @@ function Weather() {
     const fetchWeatherData = async () => {
       try {
         const response = await axios.get(
-          'https://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=98d3b784cbcd6dcc6cf74e134585a280&units=imperial'
+          'https://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=98d3b784cbcd6dcc6cf74e134585a280&units=metric'
         );
         setWeatherData(response.data);
       } catch (error) {
